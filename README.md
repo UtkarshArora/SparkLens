@@ -65,3 +65,33 @@ SparkLens/
 ├── README.md
 └── main.py
 ```
+
+## Development setup
+
+SparkLens requires Java 17. Newer JDKs (18+) trigger
+`UnsupportedOperationException: getSubject` from Hadoop's filesystem layer
+when Spark writes output files.
+
+On macOS:
+
+```bash
+brew install openjdk@17
+echo 'export JAVA_HOME=$(/usr/libexec/java_home -v 17)' >> ~/.zshrc
+echo 'export PATH=$JAVA_HOME/bin:$PATH' >> ~/.zshrc
+source ~/.zshrc
+java -version   # should print openjdk version 17.x.x
+```
+
+Then create the project venv and install dependencies:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install pyspark pytest
+```
+
+Run tests with:
+
+```bash
+PYTHONPATH=. pytest tests/ -v
+```
