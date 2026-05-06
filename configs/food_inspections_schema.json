@@ -1,0 +1,23 @@
+{
+  "dataset": "Chicago Food Inspections",
+  "source": "https://data.cityofchicago.org/d/4ijn-s7e5",
+  "columns": [
+    { "name": "Inspection ID", "type": "int", "nullable": false },
+    { "name": "DBA Name", "type": "string", "nullable": false },
+    { "name": "AKA Name", "type": "string", "nullable": true },
+    { "name": "License #", "type": "int", "nullable": true },
+    { "name": "Facility Type", "type": "string", "nullable": true },
+    { "name": "Risk", "type": "string", "nullable": true },
+    { "name": "Address", "type": "string", "nullable": true },
+    { "name": "City", "type": "string", "nullable": true },
+    { "name": "State", "type": "string", "nullable": true },
+    { "name": "Zip", "type": "int", "nullable": true },
+    { "name": "Inspection Date", "type": "string", "nullable": false },
+    { "name": "Inspection Type", "type": "string", "nullable": true },
+    { "name": "Results", "type": "string", "nullable": false },
+    { "name": "Violations", "type": "string", "nullable": true },
+    { "name": "Latitude", "type": "double", "nullable": true },
+    { "name": "Longitude", "type": "double", "nullable": true },
+    { "name": "Location", "type": "string", "nullable": true }
+  ]
+}

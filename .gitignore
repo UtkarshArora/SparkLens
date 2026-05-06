@@ -1,0 +1,29 @@
+# macOS
+.DS_Store
+__MACOSX/
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual envs
+.venv/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Spark local artifacts
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Test / coverage
+.pytest_cache/
+.coverage
+
+# Local outputs
+output/

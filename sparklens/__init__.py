@@ -9,14 +9,14 @@ Modules:
     utils               Shared helpers, logger, and audit context (Debdeep)
 
 Other modules will be added by teammates:
-    schema_profiling    Schema validation and column profiling (Utkarsh)
     outliers            Outlier detection and treatment (Harshita)
     pipeline            End-to-end SparkLens pipeline wrapper (team)
 """
 
 from . import missing_duplicates
+from . import schema_profiling
 from . import utils
 
 __version__ = "0.1.0"
 
-__all__ = ["missing_duplicates", "utils"]
+__all__ = ["missing_duplicates", "schema_profiling", "utils"]
